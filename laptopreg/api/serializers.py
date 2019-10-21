@@ -17,9 +17,13 @@ class LaptopsRegisterCreateUpdateSerializer(ModelSerializer):
         model = LaptopsRegister
         fields = [
             'user',
-            'laptopname',
             'color',
             'serialnumber',
+            'make',
+            'macaddress',
+            'ownership',
+            'model',
+            'barcode'
         ]
 
 
@@ -38,9 +42,13 @@ class LaptopsRegisterDetailSerializer(ModelSerializer):
             'url',
             'id',
             'user',
-            'laptopname',
             'color',
             'serialnumber',
+            'make',
+            'macaddress',
+            'ownership',
+            'model',
+            'barcode'
             'updated',
             'timestamp',
         ]
@@ -59,9 +67,13 @@ class LaptopsRegisterListSerializer(ModelSerializer):
             'url',
             'id',
             'user',
-            'laptopname',
             'color',
             'serialnumber',
+            'make',
+            'macaddress',
+            'ownership',
+            'model',
+            'barcode'
             'updated',
             'timestamp',
             'delete_url', 

@@ -44,6 +44,10 @@ urlpatterns = [
     path('api/healthtips/', include(("healthtips.api.urls",'healthtips-api'), namespace='healthtips-api')),
     path('api/rules/', include(("rules.api.urls",'rules-api'), namespace='rules-api')),
     path('api/drugs/', include(("drugs.api.urls",'drugs-api'), namespace='drugs-api')),
+    path('api/home/', include(("home.api.urls",'home-api'), namespace='home-api')),
+    # path('api/security/', include(("security.api.urls",'security-api'), namespace='security-api')),
+    path('api/notices/', include(("notices.api.urls",'notices-api'), namespace='notices-api')),
+    path('api/lostandfound/', include(("lostandfound.api.urls",'lostandfound-api'), namespace='lostandfound-api')),
     path('api/SportsandFacility/', include(("SportsandFacility.api.urls",'SportsandFacility-api'), namespace='SportsandFacility-api')),
 ]
 

@@ -71,7 +71,7 @@ class LaptopsRegisterDetailAPIView(RetrieveAPIView):
 class LaptopsRegisterListAPIView(ListAPIView):
     serializer_class = LaptopsRegisterListSerializer
     filter_backends = [SearchFilter, OrderingFilter]
-    search_fields = ['laptopname', 'color', 'serialnumber', 'user']
+    search_fields = ['model','make', 'macaddress', 'color', 'serialnumber', 'user']
     permission_classes = [AllowAny]
 
     def get_queryset(self):

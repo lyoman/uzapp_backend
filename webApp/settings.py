@@ -36,7 +36,11 @@ ADMIN_SITE_HEADER = "UzApp Administration"
 
 INSTALLED_APPS = [
     'corsheaders',
+    'home',
+    'security',
+    'lostandfound',
     'healthtips',
+    'notices',
     'drugs',
     'rules',
     'faqs',
